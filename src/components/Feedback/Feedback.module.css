@@ -1,6 +1,6 @@
 .section {
   width: 500px;
-  outline: 1px solid rgb(145, 12, 12);
+  /* outline: 1px solid rgb(145, 12, 12); */
 }
 
 .title {
@@ -9,6 +9,12 @@
 }
 
 .message {
+  text-align: center;
+}
+
+.statistics {
+  margin: 0 auto;
+  padding-left: 40px;
   text-align: center;
 }
 

@@ -1,10 +1,10 @@
 // import React from 'react';
-// import s from './Feedback.module.css';
+import s from './Feedback.module.css';
 
 function Statistics({ good, neutral, bad, total, positivePercentage }) {
   console.log(good);
   return (
-    <div>
+    <div className={s.statistics}>
       {/* <h3>Statistics</h3> */}
       <ul>
         <li>Good: {good}</li>
