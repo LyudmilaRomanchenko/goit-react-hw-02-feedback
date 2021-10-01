@@ -1,3 +1,17 @@
+.section {
+  width: 500px;
+  outline: 1px solid rgb(145, 12, 12);
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.message {
+  text-align: center;
+}
+
 .listButton {
   display: flex;
   justify-content: center;
@@ -11,12 +25,16 @@
   width: 100px;
   height: 40px;
   border: none;
-  /* background-color: rgb(149, 189, 189); */
+  background-color: rgb(152, 218, 218);
   border-radius: 8px;
   cursor: pointer;
 }
 
-.buttonGood {
+.button:hover {
+  background-color: rgb(149, 189, 189);
+}
+
+/* .buttonGood {
   composes: button;
   background-color: rgb(103, 204, 170);
 }
@@ -29,4 +47,4 @@
 .buttonBad {
   composes: button;
   background-color: rgb(206, 110, 107);
-}
+} */
