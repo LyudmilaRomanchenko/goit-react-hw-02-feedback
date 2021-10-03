@@ -5,7 +5,6 @@ function Statistics({ good, neutral, bad, total, positivePercentage }) {
   console.log(good);
   return (
     <div className={s.statistics}>
-      {/* <h3>Statistics</h3> */}
       <ul>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
