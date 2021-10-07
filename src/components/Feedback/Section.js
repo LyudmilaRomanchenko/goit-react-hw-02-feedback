@@ -1,4 +1,5 @@
 import s from './Feedback.module.css';
+import PropTypes from 'prop-types';
 
 function Section({ title, children }) {
   return (
@@ -8,5 +9,12 @@ function Section({ title, children }) {
     </section>
   );
 }
+
+Section.prototype = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
+};
+
+PropTypes.checkPropTypes(Section);
 
 export default Section;
