@@ -5,7 +5,7 @@ import FeedbackOptions from './FeedbackOptions';
 import Section from './Section';
 import Notification from './Notification';
 
-class Feedback extends React.Component {
+class App extends React.Component {
   state = {
     good: 0,
     neutral: 0,
@@ -61,4 +61,4 @@ class Feedback extends React.Component {
   }
 }
 
-export default Feedback;
+export default App;

@@ -1,0 +1,9 @@
+.section {
+  width: 500px;
+  /* outline: 1px solid rgb(145, 12, 12); */
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+}

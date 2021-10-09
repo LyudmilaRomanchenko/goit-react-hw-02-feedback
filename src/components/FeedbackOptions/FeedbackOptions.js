@@ -1,5 +1,5 @@
 // import React from 'react';
-import s from './Feedback.module.css';
+import s from './FeedbackOptions.module.css';
 import PropTypes from 'prop-types';
 
 function FeedbackOptions({ options, onLeaveFeedback }) {
@@ -26,7 +26,15 @@ function FeedbackOptions({ options, onLeaveFeedback }) {
 }
 
 FeedbackOptions.prototype = {
-  options: PropTypes.array.isRequired,
+  // options: PropTypes.array.isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.checkPropTypes(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        value: PropTypes.number.isRequired,
+      }).isRequired,
+    ),
+  ),
   onLeaveFeedback: PropTypes.func.isRequired,
 };
 

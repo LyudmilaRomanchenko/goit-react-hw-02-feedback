@@ -1,4 +1,4 @@
-import s from './Feedback.module.css';
+import s from './Notification.module.css';
 import PropTypes from 'prop-types';
 
 function Notification({ message }) {
